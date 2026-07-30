@@ -18,7 +18,7 @@ public class Main {
         double grossSalary = sc.nextDouble();
 
         Employee employee = new Employee(name, grossSalary);
-        TaxService taxService = new TaxService;
+        TaxService taxService = new TaxService();
         PensionService pensionService = new PensionService();
         SalaryService salaryService = new SalaryService(taxService, pensionService);
 
